@@ -22,4 +22,7 @@ jobs:
           cache: maven
 
       - name: Build and run tests
-        run: mvn -B clean test
+        run: |
+          cd banking-app
+          mvn -B clean test
+        
